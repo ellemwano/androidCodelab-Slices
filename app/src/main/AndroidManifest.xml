@@ -34,6 +34,13 @@
             </intent-filter>
         </activity>
 
+        <!-- To provide slices you must define a slice provider -->
+        <provider
+            android:authorities="com.android.example.slicecodelab"
+            android:name=".MySliceProvider"
+            android:exported="true">
+        </provider>
+
     </application>
 
 </manifest>
